@@ -18,10 +18,6 @@ public class DashboardPage {
         $("[data-test-id = 'dashboard']").shouldBe(visible);
     }
 
-    public int getCardBalance(int index) {
-        return extractBalance(cards.get(index).getText());
-    }
-
     public int getCardBalance(DataHelper.CardInfo cardInfo) {
         return extractBalance(cards.findBy(text(cardInfo.getNumber().substring(15))) .getText());
     }
