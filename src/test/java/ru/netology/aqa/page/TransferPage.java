@@ -15,14 +15,11 @@ public class TransferPage {
         $("h1").shouldHave(text("Пополнение карты"));
     }
 
-    public void makeTransfer(String sourceCardNumber, int amount) {
+    public DashboardPage makeTransfer(String sourceCardNumber, int amount) {
         amountField.setValue(String.valueOf(amount));
         fromField.setValue(sourceCardNumber);
         transferButton.click();
-    }
-
-    public DashboardPage makeValidTransfer(String sourceCardNumber, int amount) {
-        makeTransfer(sourceCardNumber, amount);
         return new DashboardPage();
     }
+
 }
