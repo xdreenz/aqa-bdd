@@ -51,7 +51,7 @@ class MoneyTransferTest {
         var card2BalanceAfter = dashboardPage.getCardBalance(card2Info);
         Assertions.assertEquals(card1BalanceBefore, card1BalanceAfter);  //Баланс 1-й карты не должен измениться
         Assertions.assertEquals(card2BalanceBefore, card2BalanceAfter);  //Баланс 2-й карты не должен измениться
-        //Ошибку не ищу, т.к. тест всё равно упадёт на ассертах, к тому же точный текст ошибки неизвестен
+        //Сообщение с ошибкой не ищу, т.к. тест всё равно упадёт на ассертах, к тому же точный текст ошибки неизвестен
     }
 
 }
