@@ -1,8 +1,6 @@
 package ru.netology.aqa.page;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.SelenideElement;
 
 import lombok.val;
 import ru.netology.aqa.data.DataHelper;
@@ -12,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.$;
 
 public class DashboardPage {
-    private ElementsCollection cards = $$(".list__item div");
+    private final ElementsCollection cards = $$(".list__item div");
     private final String balanceStart = "баланс: ";
     private final String balanceFinish = " р.";
 
