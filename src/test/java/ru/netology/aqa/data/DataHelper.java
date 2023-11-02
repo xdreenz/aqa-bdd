@@ -2,8 +2,6 @@ package ru.netology.aqa.data;
 
 import lombok.Value;
 
-import java.util.Random;
-
 public class DataHelper {
     private DataHelper() {}
 

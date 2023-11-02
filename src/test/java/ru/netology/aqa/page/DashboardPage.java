@@ -3,7 +3,6 @@ package ru.netology.aqa.page;
 import com.codeborne.selenide.ElementsCollection;
 
 import lombok.val;
-import ru.netology.aqa.data.DataHelper;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$$;
